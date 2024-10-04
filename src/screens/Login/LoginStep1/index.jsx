@@ -1,5 +1,5 @@
-import LoginHolderStep1 from "../../../components/LoginHolder/LoginHolderStep1";
 
+import LoginHolderStep1 from './../../../components/AuthLayout/LoginHolder/LoginHolderStep1/index';
 const LoginStep1 = () => {
   return <LoginHolderStep1 />;
 };
