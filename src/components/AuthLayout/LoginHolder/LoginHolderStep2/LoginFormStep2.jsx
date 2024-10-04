@@ -1,4 +1,4 @@
-import finger from "../../../assets/login/Path 2121.png";
+import finger from "../../../../assets/login/Path 2121.png";
 import { Formik, Form } from "formik";
 import FormField from "../../common/FormField";
 import LongButtonGreen from "../../common/Buttons/LongButtonGreen";
