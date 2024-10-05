@@ -4,7 +4,7 @@ import Layout from "../../Layout";
 
 const LoginHolderStep1 = () => {
   return (
-  <Layout picSrc={verify} pageForm={LoginForm} />
+  <Layout picSrc={verify} pageForm={<LoginForm />} />
   );
 };
 export default LoginHolderStep1;
