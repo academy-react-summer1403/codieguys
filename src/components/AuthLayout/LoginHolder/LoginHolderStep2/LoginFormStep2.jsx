@@ -1,8 +1,8 @@
 import finger from "../../../../assets/login/Path 2121.png";
 import { Formik, Form } from "formik";
-import FormField from "../../common/FormField";
-import LongButtonGreen from "../../common/Buttons/LongButtonGreen";
-import LongButtonWhite from "../../common/Buttons/LongButtonWhite";
+import FormField from "../../../common/FormField";
+import LongButtonGreen from "../../../common/Buttons/LongButtonGreen";
+import LongButtonWhite from "../../../common/Buttons/LongButtonWhite";
 
 const LoginFormStep2 = () => {
   return (
