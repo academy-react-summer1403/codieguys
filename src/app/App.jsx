@@ -1,21 +1,14 @@
-import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Login from '../screens/Login'
+import "./App.css";
+import RegisterStep3 from "../screens/Register/RegisterStep3/index.jsx"
+import ForgetPassword from "../screens/PassWord/ForgetPassword/index.jsx";
+import NewPassword from "../screens/PassWord/NewPassword/index.jsx";
 
 function App() {
-  
-  return(
+  return (
     <>
-    <Login />
-  
-    </>
-  )
-
-
-
-
+<NewPassword />
+   </>
+  );
 }
 
-export default App
+export default App;
