@@ -9,7 +9,7 @@ const FormField = ({ placeholder, src }) => {
       <img
         src={src}
         alt=""
-        className="inline mr-[29.86px] ml-[23.68px] mb-[9px] "
+        className="inline mr-[29px] ml-[23.68px] mb-[9px] "
       />
     </div>
   );
