@@ -1,7 +1,6 @@
 import http from "../../interceptor"
 
 export  const forgetPasswordAPI = async(user) => { 
-    
 
     try {
         const response = await http.post("/Sign/ForgetPassword" , user);
