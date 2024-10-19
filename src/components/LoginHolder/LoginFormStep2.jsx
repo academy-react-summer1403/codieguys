@@ -1,5 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import finger from "../../assets/login/Path 2121.png"
+import finger from "../../assets/login/id.png"
 
 import LongButtonGreen from "../common/Buttons/LongButtonGreen";
 import LongButtonWhite from "../common/Buttons/LongButtonWhite";
