@@ -1,6 +1,6 @@
 import LoginForm from "./LoginForm";
 import verify from "../../assets/login/verfy.png";
-import homeLogo from "../../assets/login/Path 1902.png";
+import homeLogo from "../../../public/img/home.png";
 import LoginFormStep2 from "./LoginFormStep2";
 import LoginPicStep2 from "./LoginPicStep2";
 import LoginPic from "./LoginPic";

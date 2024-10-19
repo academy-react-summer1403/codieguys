@@ -1,8 +1,16 @@
+import Header from "../../components/common/LayOut/Header"
+import Footer from "../../components/common/LayOut/Footer"
+import LandingHolder from '../../components/LandingHolder'
+
+
 const Landing = () => {
     return (
-        <div>
-            {/* Landing holder in here , in figma :  web 1920 - landing */}
-        </div>
+        <>
+            <Header />
+            <LandingHolder />
+            <Footer />
+
+        </>
     )
 }
 
