@@ -6,13 +6,16 @@ import emailIcon from "../../../../assets/register/a.png";
 import key from "../../../../assets/register/key (2).png";
 import passCheck from "../../../../assets/register/checkpass.png";
 import { registerAPI } from "../../../../core/services/api/Auth/register";
+import usePhoneStore from "../../../../store/user.store";
 
 const RegisterFormStep3 = () => {
+  const { phoneNumber } = usePhoneStore();
   const handelSubmit = async (value) => {
     if (value.repeatPass === value.password) {
       const result = await registerAPI(value);
       if (result.success) {
         console.log("success");
+        setItem("token", value.token);
       } else {
         console.log("NO");
       }
@@ -30,7 +33,7 @@ const RegisterFormStep3 = () => {
           initialValues={{
             password: "",
             gmail: "",
-            phoneNumber: "09382045502",
+            phoneNumber: phoneNumber,
           }}
           onSubmit={handelSubmit}
         >

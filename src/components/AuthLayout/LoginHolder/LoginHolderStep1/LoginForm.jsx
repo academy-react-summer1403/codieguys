@@ -12,7 +12,7 @@ import { setItem } from "../../../../core/services/common/storage.sevices";
 const LoginForm = () => {
   const handelSubmit = async (value) => {
     const user = await loginAPI(value);
-    //console.log(user);
+    console.log(user);
     setItem("token", user.token);
   };
   const getProfileFunc = async () => {

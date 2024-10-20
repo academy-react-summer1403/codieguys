@@ -13,8 +13,8 @@ const authRoutes = [
   { path: "/RegisterStep1", element: <RegisterStep1 /> },
   { path: "/RegisterStep2", element: <RegisterStep2 /> },
   { path: "/RegisterStep3", element: <RegisterStep3 /> },
-  { path: "/resetpassword", element: <ForgetPassword /> },
-  { path: "/NewPassword", element: <NewPasswordHolder /> },
+  { path: "/ForgetPassword", element: <ForgetPassword /> },
+  { path: "/reset-password/:ConfigValue", element: <NewPasswordHolder /> },
 
 
 ];
