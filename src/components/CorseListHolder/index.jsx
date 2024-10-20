@@ -4,6 +4,7 @@ import { GridHolder } from "./GridHolder/GridHolder";
 import { HeaderList } from "./HeaderList";
 import { HeaderTitle } from "./HeaderTitle";
 import { CardAndFilterHolder } from "./CardAndFilterHolder";
+import { ButtonFooterTop } from "./ButtonFooterTop";
 
 
 const CorseListHolder = () => {
@@ -15,6 +16,7 @@ const CorseListHolder = () => {
       <CardAndFilterHolder/>
 
       <GridHolder />
+      <ButtonFooterTop />
     </div>
   );
 };
