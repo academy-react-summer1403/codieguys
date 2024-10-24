@@ -1,27 +1,18 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
-import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Login from '../screens/Login'
-import Landing from '../screens/Landing'
+import "./App.css";
+import RegisterStep3 from "../screens/Register/RegisterStep3/index.jsx";
+import ForgetPassword from "../screens/PassWord/ForgetPassword/index.jsx";
+import NewPassword from "../screens/PassWord/NewPassword/index.jsx";
+import LoginStep1 from "./../screens/Login/LoginStep1/index";
+import LoginStep2 from "../screens/Login/LoginStep2/index.jsx";
+import { RouterProvider } from "react-router-dom";
+import router from "../config/router/routes.jsx";
 
 function App() {
-  
-  return(
-    // <BrowserRouter>
-    //     <Routes>
-    //       <Route path="/" element={<Landing />} />
-          
-    //       {/* <Route path="/landing" element={<Landing />} /> */}
-    //     </Routes>
-    //   </BrowserRouter>
-    <Landing />
-  )
-
-
-
-
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
-export default App
+export default App;
