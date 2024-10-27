@@ -10,4 +10,4 @@ const NewsListHolder = () => {
   )
 }
 
-export default {NewsListHolder}
+export default NewsListHolder

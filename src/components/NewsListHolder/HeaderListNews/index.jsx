@@ -7,9 +7,9 @@ const HeaderListNews = ({ setSearch }) => {
   return (
     <div className="w-full py-9 px-16 flex bg-custom-gray shadow-2xl rounded-[37px] shadow-black/20 justify-between items-center">
       <div className="flex items-center gap-5">
-        <div className="flex items-center gap-9 rounded-full border border-darkGreen p-7">
-          <img src={menu} />
-          <img src={list} />
+      <div className="flex items-center gap-[90px] justify-between  rounded-full border border-darkGreen text-darkGreen p-7 text-2xl">
+          دسته بندی
+          <img src={point} />
         </div>
         <div className="flex items-center gap-[90px] justify-between  rounded-full border border-darkGreen text-darkGreen p-7 text-2xl">
           مرتب سازی
