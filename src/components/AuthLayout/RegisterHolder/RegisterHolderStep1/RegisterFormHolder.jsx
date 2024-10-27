@@ -2,7 +2,7 @@ import { Formik, Form } from "formik";
 import FormField from "../../../common/FormField";
 import LongButtonGreen from "../../../common/Buttons/LongButtonGreen";
 import LongButtonWhite from "../../../common/Buttons/LongButtonWhite";
-import mobileIcon from "../../../../assets/login/Path 1905.png";
+import mobileIcon from "../../../../assets/login/key.png";
 import { sendVerifyMessageAPI } from "../../../../core/services/api/Auth/register";
 import { useNavigate } from "react-router-dom";
 import RegisterStep2 from "./../../../../screens/Register/RegisterStep2/index";
