@@ -9,19 +9,14 @@ import { HeaderList } from "../components/CorseListHolder/HeaderList";
 import { GridHolder } from "../components/CorseListHolder/GridHolder/GridHolder";
 import { Filter } from "../components/CorseListHolder/filter/Filter";
 import CorseListHolder from "../components/CorseListHolder";
+import NewsListHolder from "../components/NewsListHolder";
 
 function App() {
   return (
     <>
-      <CorseListHolder />
+      {/* <CorseListHolder /> */}
 
-      {/* <CardWithTopLogo /> */}
-
-      {/* <HeaderList /> */}
-
-      {/* <GridHolder /> */}
-
-      {/* <Filter /> */}
+      <NewsListHolder />
     </>
   );
 }
