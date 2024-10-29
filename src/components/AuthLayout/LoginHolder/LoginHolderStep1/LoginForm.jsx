@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import mobileIcon from "../../../../assets/login/Path 1905.png";
-import keyIcon from "../../../../assets/login/Path 1906.png";
+import keyIcon from "../../../../assets/login/key.png";
 import LongButtonGreen from "../../../common/Buttons/LongButtonGreen";
 import LongButtonWhite from "../../../common/Buttons/LongButtonWhite";
 import FormField from "../../../common/FormField";
