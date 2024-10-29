@@ -8,12 +8,21 @@ import { loginAPI } from "../../../../core/services/api/Auth/login";
 import { useEffect } from "react";
 import { getProfile } from "./../../../../core/services/api/user";
 import { setItem } from "../../../../core/services/common/storage.sevices";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router";
 
 const LoginForm = () => {
+  const navigate = useNavigate();
+
   const handelSubmit = async (value) => {
     const user = await loginAPI(value);
     console.log(user);
+    toast(user.message);
+
     setItem("token", user.token);
+    if (user.success) {
+      navigate("/Landing");
+    }
   };
   const getProfileFunc = async () => {
     const user = await getProfile();

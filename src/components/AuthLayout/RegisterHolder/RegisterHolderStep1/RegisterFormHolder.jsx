@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import RegisterStep2 from "./../../../../screens/Register/RegisterStep2/index";
 import { useEffect } from "react";
 import usePhoneStore from "../../../../store/user.store";
+import toast from "react-hot-toast";
 const RegisterForm = () => {
   const { setPhoneNumber } = usePhoneStore();
 
@@ -16,6 +17,7 @@ const RegisterForm = () => {
     const result = await sendVerifyMessageAPI(value);
     console.log("this is result in form : ", result);
     if (result.success) {
+      toast.success(result.message);
       setPhoneNumber(value.phoneNumber);
       navigate("/RegisterStep2");
     }
