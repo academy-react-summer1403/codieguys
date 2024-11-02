@@ -2,10 +2,11 @@ import { Formik, Form } from "formik";
 import FormField from "../../../common/FormField";
 import LongButtonGreen from "../../../common/Buttons/LongButtonGreen";
 import LongButtonWhite from "../../../common/Buttons/LongButtonWhite";
-import finger from "../../../../assets/login/Path 2121.png";
+import finger from "../../../../assets/login/id.png";
 import { verifyMessageAPI } from "../../../../core/services/api/Auth/register";
 import { useNavigate } from "react-router-dom";
 import usePhoneStore from "../../../../store/user.store";
+import toast from "react-hot-toast";
 
 const RegisterFormStep2 = () => {
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ const RegisterFormStep2 = () => {
     const result = await verifyMessageAPI(value);
     console.log("here! " + result + " to here! ");
     if (result.success) {
+      toast.success(result.message);
       navigate("/RegisterStep3");
     }
   };

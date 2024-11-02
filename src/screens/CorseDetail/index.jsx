@@ -1,9 +1,11 @@
-const CorseDetail = () => {
-    return (
-        <div>
-            {/* CorseDetail holder in here , in figma : web1920-5 */}
-        </div>
-    )
-}
+import CorseDetailHolder from "../../components/CorseDetailHolder";
 
-export default CorseDetail
+const CorseDetail = () => {
+  return (
+    <div>
+      <CorseDetailHolder />
+    </div>
+  );
+};
+
+export default CorseDetail;

@@ -8,6 +8,7 @@ const instance = axios.create({
 });
 
 const onSuccess = (response) => {
+  
   return response.data;
 };
 
@@ -21,7 +22,7 @@ const onError = (err) => {
   if (err?.response?.status >= 400 && err?.response?.status < 500) {
     alert("client error" + err?.response.status);
   }
-  return Promise.reject(err);
+  return err;
 };
 
 instance.interceptors.response.use(onSuccess, onError);

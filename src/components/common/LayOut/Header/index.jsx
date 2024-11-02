@@ -6,6 +6,7 @@ import shop from '../../../../../public/img/shop.png'
 import SingIn from './SignIn'
 import { Account } from './Account'
 import { Buttons } from './Buttons'
+import { Link } from 'react-router-dom'
 const Header = () => {
 
   return (
@@ -18,8 +19,13 @@ const Header = () => {
       </div>
 
       <div className='flex justify-center items-center gap-10 px-[50px]'>
+        <Link>
         <Buttons name="صفحه اصلی" />
+        </Link>
+        {/* <Link to={"/CourseList"}> */}
         <Buttons name="دوره ها " />
+        
+        {/* </Link> */}
         <Buttons name="مقالات" />
         <Buttons name="درباره ما" />
       </div>

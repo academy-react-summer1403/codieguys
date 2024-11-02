@@ -6,10 +6,12 @@ import LoginStep1 from "./../screens/Login/LoginStep1/index";
 import LoginStep2 from "../screens/Login/LoginStep2/index.jsx";
 import { RouterProvider } from "react-router-dom";
 import router from "../config/router/routes.jsx";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster />
       <RouterProvider router={router} />
     </>
   );
