@@ -7,16 +7,28 @@ import key from "../../../../assets/register/key (2).png";
 import passCheck from "../../../../assets/register/checkpass.png";
 import { registerAPI } from "../../../../core/services/api/Auth/register";
 import usePhoneStore from "../../../../store/user.store";
+import toast from "react-hot-toast";
 
 const RegisterFormStep3 = () => {
   const { phoneNumber } = usePhoneStore();
   const handelSubmit = async (value) => {
+    const user = {
+      password: value.password,
+      phoneNumber: value.phoneNumber,
+      gmail: value.gmail,
+    };
+    console.log(user);
+
     if (value.repeatPass === value.password) {
-      const result = await registerAPI(value);
+      const result = await registerAPI(user);
+      console.log(result);
       if (result.success) {
-        console.log("success");
+        toast.success("عملیات با موفقیت انجام شد");
+        console.log(result.message);
         setItem("token", value.token);
       } else {
+        toast.error(result.message);
+
         console.log("NO");
       }
     } else {
@@ -34,6 +46,7 @@ const RegisterFormStep3 = () => {
             password: "",
             gmail: "",
             phoneNumber: phoneNumber,
+            repeatPass: "",
           }}
           onSubmit={handelSubmit}
         >
