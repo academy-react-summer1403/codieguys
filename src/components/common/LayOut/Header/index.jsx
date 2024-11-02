@@ -22,10 +22,10 @@ const Header = () => {
         <Link>
         <Buttons name="صفحه اصلی" />
         </Link>
-        <Link to={}>
+        {/* <Link to={"/CourseList"}> */}
         <Buttons name="دوره ها " />
         
-        </Link>
+        {/* </Link> */}
         <Buttons name="مقالات" />
         <Buttons name="درباره ما" />
       </div>
